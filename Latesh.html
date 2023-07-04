@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokanatham</title>
+</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css">
+<style>
+    .container {
+        width: 100%;
+        background-color: blue;
+        display: flex;
+        padding: 5px;
+        right: 5px;
+        margin-right: 80px;
+        border: 2px;
+        border-style: dashed;
+        border-radius: 10px;
+        position: static;
+    }
+    body{
+        margin: 10px;
+       background: url(pexels1.jpeg);
+        background-position: 30px;
+        background-size: auto;
+    }
+
+    .item {
+        flex-direction: row;
+        margin-left: 10px;
+        padding: 5px;
+        
+        border-radius: 10px;
+
+    }
+
+    #icon {
+        padding-top: 18px;
+        color: rgb(237, 254, 7);
+        font-size: xx-large;
+        margin-right: 5px;
+    }
+
+
+
+    .cont {
+        display: flex;
+
+        font-size: xx-large;
+        height: 600px;
+
+
+
+    }
+
+    .item1 {
+        flex-direction: column;
+        background-color:none;
+        line-height: 50px;
+        border-radius: 20px;
+        border: 2px solid white;
+        border-style:ridge;
+
+    }
+
+    li {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-right: 10px;
+    }
+
+    li:hover {
+        color: aqua;
+        text-decoration-line: underline;
+    }
+
+    li {
+        padding-left: 10px;
+        text-align: left;
+
+    }
+
+    li:active {
+        color: green;
+    }
+
+    #icon1 {
+        transform: rotate(180deg);
+        color: yellow;
+        margin-right: 5px;
+    }
+
+    #n{
+        color: rgb(7, 234, 242);
+        margin-top: 34px;
+
+    }
+
+    #user {
+        color: rgb(6, 231, 160);
+        margin-top: 25px;
+        margin-left: 300px;
+      
+       
+
+
+    }
+    [href]{
+        font-family: cursive;
+        color: rgb(152, 241, 8);
+        background-color:blue;
+
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <i class="fa fa-keyboard fa-2x" aria-hidden="true" id="n"></i>
+        </div>
+        <div class="item">
+            <h3 style="font-family:Arial, Helvetica, sans-serif; color: chartreuse; font-size: xx-large;">Hello welcome
+                To placement
+                preparation website</h1>
+        </div>
+        <div class="item">
+
+        </div>
+        <div class="item" id = "nt3">
+            <div class="pure-menu pure-menu-horizontal" id="nt1">
+                <ul class="pure-menu-list" id="nt2">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover" class = "nt">
+                        <a href="#" id="menuLink1" class="pure-menu-link" >
+                            <i class="fa fa-user-circle fa-3x" aria-hidden="true" id="user"></i></a>
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item"class = "nt">
+                                <a href="#" class="pure-menu-link">Name</a>
+                            </li>
+                            <li class="pure-menu-item" class = "nt">
+                                <a href="#" class="pure-menu-link">Email</a>
+                            </li>
+                            <li class="pure-menu-item" class = "nt">
+                                <a href="#" class="pure-menu-link">Conatct Number</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="cont">
+        <div class="item1">
+            <ul type="none" id="menu">
+                <li id="active" style="color:white;">
+                    <i class="fa fa-home" id="icon"></i> Home
+                </li>
+
+                <li style="color:white;"><i class="fa fa-plus-square" aria-hidden="true"
+                        style="color: yellow;  margin-right: 5px;"></i>Aptitude</li>
+                <li style="color:white;"><i class="fa fa-desktop" aria-hidden="true" style="color: yellow;  margin-right: 5px;"></i>Technical
+                </li>
+                <li style="color:white;"><i class="fa fa-paper-plane" aria-hidden="true" style="color: yellow; margin-right: 5px;"></i>Latest
+                    Technologies</li>
+                <li style="color:white;"><i class="fa fa-hourglass-start" aria-hidden="true"
+                        style="color: yellow; margin-right: 5px; "></i>Projects</li>
+                <li style="color:white;"><i class="fa fa-phone" id="icon1" aria-hidden="true"></i>Contact us</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
