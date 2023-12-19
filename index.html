@@ -5,9 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Latesh Gym</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <link rel="Stylesheet" href="css/style.css">
 <style>
+  * {
+    scroll-behavior: smooth;
+  }
+
   body {
     margin: 0px;
     color: white;
@@ -134,9 +140,9 @@
 
     <div class="center">
 
-      <ul class="navbar">                                                               
+      <ul class="navbar">
         <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About us</a></li>
+        <li><a href="#about">About us</a></li>
         <li><a href="#">Contact us</a></li>
         <li><a href="#">Fitness Package</a></li>
       </ul>
@@ -148,9 +154,9 @@
     </div>
   </header>
 
-  <div class="container">
-    <h1>Join Now</h1>
-    <form action="abc.php">
+  <div class="container flex flex-col items-center space-y-5">
+    <h1 class="text-center text-5xl text-green-500 font-semibold">Join Now</h1>
+    <form action="abc.php ">
       <div class="fgroup">
         <input type="text" name="" placeholder="Enter your name">
       </div>
@@ -166,13 +172,67 @@
       <div class="fgroup">
         <input type="text" name="" placeholder="Enter your contact number">
       </div>
-      <button class="btn">Submit</button>
+      <button class="btn transition-all duration-150 ease-in">Submit</button>
 
     </form>
+
   </div>
-  <footer style="text-align: center; font-size: larger; color:aqua;">CopyRight : This website belongs to Lokanatham Latesh</footer>
+
+ 
+
+  <!-- About Section -->
+  <div class="h-[90vh] w-full  bg-white flex flex-col items-center justify-center text-black mt-10 " id="about">
+    <h1 class="text-3xl font-bold">We can give you</h1>
+    <h2 class="text-3xl text-yellow-400 font-bold">Much More Than Others</h2>
+
+    <div class="text-2xl mt-10 font-semibold flex flex-col  w-full space-y-5 ">
+
+      <div class="flex justify-center items-center w-full space-x-64">
+        <div class="flex flex-col space-y-5">
+          <img src="https://goldsgym.in/uploads/home_icons/gyms.jpg" alt="">
+          <p>156 Gyms</p>
+        </div>
+
+        <div class="flex flex-col space-y-5">
+          <img src="https://goldsgym.in/uploads/home_icons/cities.jpg" class=" h-[111px] w-[111px]" alt="">
+          <p>95 Cities</p>
+        </div>
+
+        <div class="flex flex-col space-y-5">
+          <img src="https://goldsgym.in/uploads/home_icons/states.jpg" class=" h-[111px] w-[111px]" alt="">
+          <p>26 States</p>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center w-full space-x-64">
+        <div class="flex flex-col space-y-5 items-center">
+          <img src="https://goldsgym.in/uploads/home_icons/Website_Personal.jpg" class=" h-[111px] w-[111px]" alt="">
+          <p>Personal Training Program</p>
+        </div>
+
+        <div class="flex flex-col space-y-5 items-center">
+          <img src="https://goldsgym.in/uploads/home_icons/Corporate.jpg" class=" h-[111px] w-[111px]" alt="">
+          <p>Corporate Wellness Program</p>
+        </div>
+
+        <div class="flex flex-col space-y-5 items-center">
+          <img src="https://goldsgym.in/uploads/home_icons/Group_Exercise.jpg" class=" h-[111px] w-[111px]" alt="">
+          <p>Group Program</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   
+
   
+
+  <footer class="bg-yellow-200 py-1 font-extrabold text-black" style="text-align: center; ">CopyRight : This website belongs to Lokanatham
+    Latesh
+  <p>Made with <span class="text-red-500 ">	&#x2764;</span></p></footer>
+
+
 
 
 </body>
